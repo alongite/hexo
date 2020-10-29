@@ -17,10 +17,7 @@
 # Why Coder❓
 
 + 自己从大一就在用Hexo写博客，对Hexo很喜欢，一直想着自己写一个主题
-+ 自己主要方向是NLP、深度学习，Web开发一直都是自学，能力有限，不能太复杂
-+ 不复杂不代表不好，博客的极简也是很多人追求的，所以我开发了这个主题，前前后后1个月
-
-> 演示地址 : [点这里](https://www.liuxunzhuo.top)
++ 博客的极简也是很多人追求的，所以我前前后后大概用了一个月开发了这个主题
 
 # Introduction🎙️
 
@@ -32,100 +29,127 @@
 
 当你厌倦了花哨之后，我相信很多人想让博客变得简约，Coder就是为你们而设计❤️
 
-接下来我来展示各个`效果图`，因为 **Coder 1.1** 发布了，以下展示效果为**Coder 1.0**的效果，具体效果请参见[这里](https://www.liuxunzhuo.top)
-
-## Coder 展示👀
-
-### 电脑端💻：
-
-#### 黑色模式
-
-![](https://github.com/xunzhuo/hexo-theme-coder/raw/master/source/doc/gentle.png)
-
-#### 白色模式
-
-![](https://github.com/xunzhuo/hexo-theme-coder/raw/master/source/doc/light.png)
-
-### Lady模式：
-
-#### Dark模式
-
-![](https://github.com/xunzhuo/hexo-theme-coder/raw/master/source/doc/lady1.png)
-
-#### Light模式
-
-![](https://github.com/xunzhuo/hexo-theme-coder/raw/master/source/doc/lady2.png)
-
-### 手机端：
-
-<div align = "center">
-  <span> <img src="https://github.com/xunzhuo/hexo-theme-coder/raw/master/source/doc/phone1.png" width="200" /> <img src="https://github.com/xunzhuo/hexo-theme-coder/raw/master/source/doc/phone2.png" width="200"  /></span>
-</div>
-
+> 因为 **Coder 2.0** 发布了，具体效果请参见[这里](https://www.liuxunzhuo.top)
 
 
 # How To Use❓
 
-
-
 ## Coder使用和配置很简单：
 
-### 1. 进入 /Hexo目录/themes：
+### 1. 下载Coder
+
++ **最新版**：进入 /Hexo目录/themes：
 
 ``` shell
-git clone url coder
+git clone git@github.com:Xunzhuo/hexo-theme-coder.git coder
 ```
 
-### 2. 修改Hexo目录下的**_config.yml** 的 **theme** 为 **coder**
++ **稳定版**：在[Released](https://github.com/Xunzhuo/hexo-theme-coder/releases/tag/2.0)下载 ZIP 解压在 /themes 文件夹下
 
-### 3. 修改配置
+### 2. 修改Hexo目录下的_config.yml 的 **theme** 为 **coder**
+
+### 3. 语言配置
+
+请在hexo文件下的"_config.yml"修改 **language** 为 **en** 或者 **zh-Hans**， 目前只支持这两种语言
+
+
+### 4. 修改配置
 
 ````yaml
-# 网站标题
-logo_title: 你网站的名字
-# 初始化风格 black/light
+# 当前版本 | Theme Version
+Hexo: "2.1"
+
+# 网站标题 | Title
+logo_title: Title Name
+
+# 初始化风格 | Default Style "black/light"
 style: black
+#style: light
 
-# 首页URL
-link: https://www.liuxunzhuo.top
+#SEO优化 | SEO settings
 
-#网站标语:
-words: AI 🤖️ Code 🧑‍💻 Life 🌈
+## 网站描述 | Description
+description: 嘿，我是刘训灼～这是我的子站，用于展示写的Hexo主题：Coder。欢迎访问！
 
-# 你的昵称
-author: 1900
-# 中心图标选择男女或者自定义
+## 网站关键词：用英文逗号分割 | Keywords
+keywords: Blog,Hexo,Theme,刘训灼,LiuXunzhuo
+
+# 首页URL | Your URL
+link: Your_URL
+
+#标语 | Your Slogan
+words: Your Words
+
+# 你的昵称 | Your Name
+author: Your Name
+
+# 中心图标选择男女或者自定义 | Gender
 gender: /img/male.png #/img/female.png
 
+# 站点小图标地址 | Small Icon of Your Site
 favicon: /img/favicon.ico
 
-# 菜单栏配置
+# 菜单栏配置 | Nav Bar Settings
 menu:
   关于我👀: /about
   访问主站🎉: https://liuxunzhuo.tech
-  Github🐒: https://github.com/xunzhuo
+  GitHub🐒: https://github.com/xunzhuo
 
-# 代码高亮
-highlight:
-  enable: true
-  
-# 评论配置
-# 请改成自己的 KEY
-# 若关闭valine 设置enable为false
+# 站内关键词搜索 | Local Search
+search:
+ enable: true
+ path: search.xml
+ field: post
+ # onload: true
+
+# Valine 评论系统 | Comments of Valine
+## 请改成自己的 KEY ｜ Replace Your Own Key
+## 若关闭valine 设置enable为false 
 valine:
   enable: true
   appId: NOsswOncKgc8HOxqo9oxIWlX-gzGzoHsz
   appKey: z1FihjWEbS8uIfUQdmCtK7zz
 
+# 代码高亮 ｜ Code Highlight
+highlight:
+  enable: true
 ````
+
+### 5. 404 页面配置：
+
+#### 在hexo跟目录的Source文件夹下创建一个404.md，并写入如下内容:
+
+``` markdown
+---
+title: 404
+type: "404"
+layout: "404"
+---
+```
 
 > 然后你就可以愉快的开始使用啦！😊
 
-# Coder后期计划
+# Coder TODO LIST🌟
 
 闲暇时可能会不断扩展这个主题的功能，让Coder更实用～
 
-如果你对这个项目感兴趣也可以一起合作🤝
+- [x] 增加搜索功能🌲
+- [ ] 增加分类页🌲
+- [ ] 增加标签页🌲
+- [ ] 增加文章TOC🌲
+- [ ] 手机端兼容性提高🌲
+- [ ] 文章字数、阅读量统计🌲
+- [x] 网站 pv uv 统计🌲
+- [x] 多语言支持🌲
+- [ ] CSS整体美化🌲
+- [ ] 提高个人定制化功能🌲
+- [ ] **Endless Updating**🌲🌲🌲
 
-## 如果喜欢请送上一个star✨哦～如果你对我的研究感兴趣期待你的follow👬～🌈
+> 如果你对这个项目感兴趣也可以一起合作🤝
+
+---
+
+### 如果喜欢请送上一个star✨～
+
+### 如果你对我的研究感兴趣期待你的follow👬～🌈
 

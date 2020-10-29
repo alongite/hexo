@@ -1,34 +1,66 @@
-# 网站标题
-logo_title: Alter
-# 初始化风格 black/light
-style: black
+# 当前版本 | Theme Version
+Hexo: "2.1"
 
-# 首页URL
+#语言 | Language
+# en | zh-Hans
+#请在hexo文件下的"_config.yml"修改language
+language: en
+
+# 网站标题 | Title
+logo_title: Alter
+
+# 初始化风格 | Default Style "black/light"
+style: black
+#style: light
+
+#SEO优化
+
+## 网站描述
+description: 嘿，Coder。欢迎访问！
+
+## 网站关键词：用英文逗号分割
+keywords: Blog,Alter
+
+# 首页URL | Your URL
 link: https://alongite.github.io/hexo
 
-#标语:
-words: Maybe it's time to change.
+#标语 | Your Slogan
+words: Alter
 
-# 你的昵称
+# 你的昵称 | Your Name
 author: Alongite
-# 中心图标选择男女或者自定义
+
+# 中心图标选择男女或者自定义 | Gender
 gender: /img/male.png #/img/female.png
 
+# 站点小图标地址 | Small Icon of Your Site
 favicon: /img/favicon.ico
 
-# 菜单栏配置
+# 菜单栏配置 | Nav Bar Settings
 menu:
   关于我👀: /about
   访问主站🎉: https://github.com/alongite
-  Github🐒: https://github.com/alongite
+  GitHub🐒: https://github.com/alongite
 
-# 做了域名限制，请改成自己的 KEY
-# 若关闭valine 设置enable为false∂
+
+# 站内关键词搜索 | Local Search
+search:
+ enable: true
+ path: search.xml
+ field: post
+ # onload: true
+
+# 评论系统 | Comments
+## 做了域名限制，请改成自己的 KEY
+## 若关闭valine 设置enable为false∂
 valine:
   enable: false
   appId: NOsswOncKgc8HOxqo9oxIWlX-gzGzoHsz
   appKey: z1FihjWEbS8uIfUQdmCtK7zz
 
+# visitors count
+counter:
+  enable: true
 
 highlight:
   enable: true
